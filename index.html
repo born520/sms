@@ -21,10 +21,8 @@
     .video-ratio { position: relative; width: 100%; padding-bottom: 177.77%; } 
     iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; border: none; }
     
-     
     .play-overlay { position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 50; display: flex; justify-content: center; align-items: center; background: rgba(0,0,0,0); cursor: pointer; }
     .play-button-svg { width: 70px; height: 50px; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.3)); opacity: 1; transition: opacity 0.3s; }
-     
     .play-overlay.playing .play-button-svg { opacity: 0; }
 
     .scroll-hint { position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); z-index: 45; display: flex; flex-direction: column; align-items: center; color: #fff; text-shadow: 0 2px 4px rgba(0,0,0,0.8); pointer-events: none; animation: bounce 2s infinite; }
@@ -36,11 +34,12 @@
     .ytt-title { font-size: 24px; font-weight: 800; color: #000; line-height: 1.3; margin-bottom: 18px; word-break: keep-all; }
     .text-msg { font-size: 16px; color: #333; line-height: 1.7; margin-bottom: 22px; white-space: pre-wrap; }
     
+     
     .notion-bookmark { display: flex; width: 100%; border: 1px solid rgba(0, 0, 0, 0.12); border-radius: 10px; overflow: hidden; text-decoration: none; color: inherit; margin-bottom: 16px; background: #ffffff; min-height: 100px; }
     .bookmark-info { flex: 3; padding: 14px; display: flex; flex-direction: column; justify-content: center; min-width: 0; }
     .bookmark-title { font-size: 14px; font-weight: 700; color: #37352f; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
     .bookmark-desc { font-size: 12px; color: rgba(55,53,47,0.6); height: 34px; line-height: 1.4; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
-    .bookmark-meta { display: flex; align-items: center; margin-top: 8px; font-size: 11px; }
+    .bookmark-meta { display: flex; align-items: center; margin-top: 8px; font-size: 12px; font-weight: 600; color: #37352f; }
     .bookmark-favicon { width: 16px; height: 16px; margin-right: 8px; border-radius: 2px; }
     .bookmark-image-box { flex: 1.2; border-left: 1px solid rgba(0,0,0,0.05); background: #f0f2f5; }
     .bookmark-image-box img { width: 100%; height: 100%; object-fit: cover; }
@@ -49,8 +48,6 @@
     .page-img { width: 100%; border-radius: 12px; margin-bottom: 20px; }
     .opt-out-container { margin-top: 40px; padding: 20px 0 60px; text-align: center; border-top: 1px solid #eee; }
     .opt-out-link { display: inline-block; font-size: 13px; color: #888; text-decoration: underline; background: #f8f8f8; padding: 8px 15px; border-radius: 5px; }
-    
-     
     .swiper-button-next, .swiper-button-prev { color: #fff !important; background: rgba(0,0,0,0.3); width: 40px !important; height: 40px !important; border-radius: 50%; scale: 0.8; }
   </style>
 </head>
@@ -66,11 +63,9 @@
                   <div class="video-section">
             <div class="video-ratio">
               <iframe id="vid-0" src="https://www.youtube.com/embed/ecHYcvhAEgg?enablejsapi=1&amp;autoplay=0&amp;mute=0&amp;controls=0&amp;modestbranding=1&amp;rel=0&amp;loop=1&amp;playlist=ecHYcvhAEgg" allow="autoplay; encrypted-media"></iframe>
-              
               <div class="play-overlay" id="overlay-0" onclick="toggleVideo('vid-0', this)">
                 <svg class="play-button-svg" viewBox="0 0 68 48"><path fill="#FF0000" d="M66.52 7.74c-.78-2.93-3.09-5.24-6.02-6.02C55.21 1 34 1 34 1S12.79 1 7.5 2.72c-2.93.78-5.24 3.09-6.02 6.02C0 12.69 0 24 0 24s0 11.31 1.48 16.26c.78 2.93 3.09 5.24 6.02 6.02C12.79 47 34 47 34 47s21.21 0 26.5-1.72c2.93-.78 5.24-3.09 6.02-6.02C68 35.31 68 24 68 24s0-11.31-1.48-16.26z"></path><path fill="#FFFFFF" d="M27.2 34.2l17.6-10.2-17.6-10.2z"></path></svg>
               </div>
-              
               <div class="scroll-hint"><span>내용 더보기</span><div class="arrow"></div></div>
             </div>
           </div>
@@ -97,14 +92,18 @@ BRT는 버스 전용 차로 확보 등을 통해 정시성·수송력을 확보�
                 <div class="bookmark-info">
                   <div class="bookmark-title">한옥문 전 의장 “양산–부산 BRT 추진하자”</div>
                   <div class="bookmark-desc">한옥문 전 양산시의회 의장(양산미래혁신연구원 원장)이 13일 자신의 유튜브 채널 ‘양산이야기’를 통해 양산–부산 간 Bus Rapid Transit(BRT) 도입 필요성을 제기했다. 그는 양산과 부산이 이미 사실상 하나의 생활권임에도 불구하고 교통축이 따라가지 못해 출</div>
-                  <div class="bookmark-meta"><img class="bookmark-favicon" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.viva100.com"><span>www.viva100.com</span></div>
+                  <div class="bookmark-meta">
+                    <img class="bookmark-favicon" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.viva100.com">
+                    <span>브릿지경제</span> </div>
                 </div>
-                <div class="bookmark-image-box"><img src="https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/01/14/.cache/512/20260114500001.jpg?v=20260122140101"></div>              </a>
+                <div class="bookmark-image-box"><img src="https://stqnq5ux4599.edge.naverncp.com/data2//content/image/2026/01/14/.cache/512/20260114500001.jpg?v=20260122140456"></div>              </a>
                                                 <a href="https://www.pointe.co.kr/news/articleView.html?idxno=68168" target="_blank" class="notion-bookmark">
                 <div class="bookmark-info">
                   <div class="bookmark-title">한옥문 전 의장, 양산-부산 출퇴근 해법으로 BRT 추진론 제기</div>
                   <div class="bookmark-desc">[포인트경제] 한옥문 전 양산시의회 의장(양산미래혁신연구원 원장)이 지난 12일 자신의 유튜브 채널 ‘양산이야기’를 통해 “양산과 부산은 이미 하나의 생활권으로 기능하고 있지만, 교통 체계는 이를 따라가지 못하고 있다”며 양산-부산 간 BRT 도입을 제안했다.한 전 의장은 영상에서 “</div>
-                  <div class="bookmark-meta"><img class="bookmark-favicon" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.pointe.co.kr"><span>www.pointe.co.kr</span></div>
+                  <div class="bookmark-meta">
+                    <img class="bookmark-favicon" src="https://www.google.com/s2/favicons?sz=64&amp;domain=www.pointe.co.kr">
+                    <span>포인트경제</span> </div>
                 </div>
                 <div class="bookmark-image-box"><img src="https://cdn.pointe.co.kr/news/photo/202601/68168_89912_4044.jpg"></div>              </a>
                       
@@ -136,25 +135,19 @@ BRT는 버스 전용 차로 확보 등을 통해 정시성·수송력을 확보�
         document.querySelectorAll('iframe').forEach(f => {
           f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
         });
-        
         document.querySelectorAll('.play-overlay').forEach(ov => ov.classList.remove('playing'));
       }
     }
   });
 
-  
   function toggleVideo(id, overlay) {
     const f = document.getElementById(id);
     if (!f || !f.contentWindow) return;
-
     const isPlaying = overlay.classList.contains('playing');
-
     if (isPlaying) {
-      
       f.contentWindow.postMessage('{"event":"command","func":"pauseVideo","args":""}', '*');
       overlay.classList.remove('playing');
     } else {
-      
       f.contentWindow.postMessage('{"event":"command","func":"unMute","args":""}', '*');
       f.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
       overlay.classList.add('playing');
